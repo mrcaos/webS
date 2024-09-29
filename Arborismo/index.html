@@ -16,24 +16,25 @@
 <body>
     <style>
         body {
-            background-color: white;
+            background-color: whitesmoke;
         }
     </style>
+
     <nav class="navbar bg-body-tertiary navbar-expand-lg  fixed-top px-3" data-bs-theme="dark">   
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="font-family: Cinzel, serif;">
                 <img src="assets/img/forest-svgrepo-com.svg" alt="forest" width="30px" height="24" class="d-inline-block align-text-top">
-                <strong> Arborista Araucanía</strong>
+                <strong>Arborista Araucanía</strong>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: Cinzel, serif;">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link active" href="#carouselVideo">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#gallery">Poda</a>
@@ -49,23 +50,30 @@
         </div>
     </nav>
     </div>
-    <header>
-        <div class="carousel-inner" id="home" style="font-family: Cinzel, serif;">
-            <img src="assets/img/bosque2.jpg" class="d-block w-100" alt="img1" height="800px;">
-            <div class="carousel-caption d-none d-md-block">
-                <h1><strong>Arborista Araucanía</strong></h1>
-                <p>Some representative placeholder content for the third slide.</p>
+
+    <section id="carouselVideo" data-mdb-carousel-init class="carousel slide carousel-fade" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video class="img-fluid" autoplay loop muted style="width: 1920px;">
+                    <source src="assets/img/bosqueVideo.mp4" type="video/mp4">
+                </video>
+                <div class="carousel-caption d-none d-md-block" style="font-family: Cinzel, serif;">
+                    <h5><strong>Arborista Araucanía</strong></h5>
+                    <p>
+                        Vive la aventura en altura con seguridad y profesionalismo. Arborismo y tala controlada garantizada.
+                    </p>
+                </div>
             </div>
         </div>
-    </header>
+    </section> 
 
-    <div class="container">
+    <div class="container" id="emergenci">
         <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top p-3 bg-info bg-danger border border-info border-bottom border-danger border-start-0 rounded-end">
             <div class="col-md-4 d-flex align-items-center">
                 <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                     <svg class="bi" width="30" height="24"><i class="fa-solid fa-tree"></i></svg>
                 </a>
-            <span class="mb-3 mb-md-0 text-body-secondary"><strong> EMERGENCIAS 24/7</strong></span>
+            <span class="mb-3 mb-md-0 text-body-secondary" style="font-family: Cinzel, serif;"><strong> EMERGENCIAS 24/7</strong></span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <a class="btn btn-outline-warning btn-lg col-2" href="https://wa.me/56973975740" role="button">
@@ -118,27 +126,19 @@
         </div>
     </div>
 
-    <div class="container" id="carusel1" style="width: 700px;">
-        <div id="carousel1" class="carousel slide" data-bs-ride="carousel1">
-            <div class="carousel-inner">
+    <div class="container-fluid">
+        <div id="carousel" class="carousel-slide" data-bs-ride="carousel1">
+            <div class="carousel-inner" style="padding-left: 33%;">
                 <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="assets/img/foto3.png" class="d-block w-100 rounded-circle" alt="foto3">
+                    <img src="assets/img/foto3.png" class="d-block w-50 rounded-circle" alt="foto3">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/img/foto2.png" class="d-block w-100 rounded-circle" alt="foto2">
+                    <img src="assets/img/foto2.png" class="d-block w-50 rounded-circle" alt="foto2">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="assets/img/foto5.png" class="d-block w-100 rounded-circle" alt="foto5">
+                    <img src="assets/img/foto5.png" class="d-block w-50 rounded-circle" alt="foto5">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
 
@@ -147,7 +147,7 @@
         <p class="lead">La importancia de la poda controlada en altura.</p>
         <a href="#contacto" class="btn btn-primary">Click aquí!</a>
 
-        <div class="container" style="padding-top: 2%;">
+    <div class="container" id="item" style="padding-top: 2%;">
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <div class="card h-100">
@@ -169,8 +169,8 @@
                             <h4 class="card-title">Plagas</h4>
                             <p class="card-text">Los árboles no podados son más susceptibles a diversas plagas y enfermedades debido a su denso follaje, 
                                 falta de luz y circulación de aire. Las plagas y infecciones fungicas son muy comunes ya que prosperen en ambientes húmedos y con poca ventilación.</p>
-                            <a href="#contacto" class="btn btn-outline-warning btn-sm">Cotiza aquí!</a>
-                            <a href="#contacto" class="btn btn-outline-warning btn-sm"><i class="far fa-heart"></i></a>
+                            <a href="#contacto" class="btn btn-outline-danger btn-sm">Cotiza aquí!</a>
+                            <a href="#contacto" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                 </div>
@@ -182,22 +182,22 @@
                             <p class="card-text">El paisajismo es el arte y la ciencia de diseñar y modificar espacios al aire libre para crear entornos estéticamente 
                                 agradables y funcionales. La poda controlada en altura juega un papel esencial en este proceso. Al realizar podas estratégicas, se puede dar forma a los árboles y arbustos, 
                                 asegurando que crezcan de manera equilibrada y armoniosa con el diseño del paisaje.</p>
-                            <a href="#contacto" class="btn btn-outline-success btn-sm">Cotiza aquí!</a>
+                            <a href="#contacto" class="btn btn-outline-danger btn-sm">Cotiza aquí!</a>
                             <a href="#contacto" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="emergenci2">
         <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top p-3 bg-info bg-danger border border-info border-bottom border-danger border-start-0 rounded-end">
             <div class="col-md-4 d-flex align-items-center">
                 <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                     <svg class="bi" width="40" height="44"><i class="fa-solid fa-tree"></i></svg>
                 </a>
-            <span class="mb-3 mb-md-0 text-body-secondary"><strong> EMERGENCIAS 24/7</strong></span>
+            <span class="mb-3 mb-md-0 text-body-secondary" style="font-family: Cinzel, serif;"><strong> EMERGENCIAS 24/7</strong></span>
         </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <a class="btn btn-outline-warning btn-lg col-2" href="https://wa.me/56973975740" role="button">
@@ -227,7 +227,6 @@
                         </div>
                         <figcaption>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Tim Marshall</span>
                         </figcaption>
                     </figure>
                 </li>
@@ -237,8 +236,7 @@
                             <img src="assets/img/rodaja1.jpg" alt="">
                         </div>
                         <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Christian Joudrey</span>                            
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.                            
                         </figcaption>
                     </figure>
                 </li>
@@ -248,8 +246,7 @@
                             <img src="assets/img/rodaja1.jpg" alt="">
                         </div>
                         <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Steve Carter</span>                            
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.                           
                         </figcaption>
                     </figure>
                 </li>
@@ -259,8 +256,7 @@
                             <img src="assets/img/rodaja1.jpg" alt="">
                         </div>
                         <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.                            
                         </figcaption>
                     </figure>
                 </li>
@@ -270,8 +266,7 @@
                             <img src="assets/img/rodaja1.jpg" alt="">
                         </div>
                         <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Rosan Harmens</span>                            
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.                            
                         </figcaption>
                     </figure>
                 </li>
@@ -281,8 +276,7 @@
                             <img src="assets/img/rodaja1.jpg" alt="">
                         </div>
                         <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Annie Spratt</span>                            
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.                            
                         </figcaption>
                     </figure>
                 </li>
@@ -358,12 +352,9 @@
         </footer>
     </div>
 
-    <div class="container">
+    <div class="container" id="spam">
         <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                </a>
             <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Powered by</span><a class="btn btn-lg col-2" href="https://mrcaos.github.io" role="button"><i class="fab fa-github"></i></a>
             </div>
         </div>
