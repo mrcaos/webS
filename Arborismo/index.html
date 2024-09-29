@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
     
@@ -18,11 +19,11 @@
             background-color: white;
         }
     </style>
-    <nav class="navbar navbar-expand-lg fixed-top px-3" data-bs-theme="dark">
+    <nav class="navbar bg-body-tertiary navbar-expand-lg  fixed-top px-3" data-bs-theme="dark">   
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="font-family: Cinzel, serif;">
                 <img src="assets/img/forest-svgrepo-com.svg" alt="forest" width="30px" height="24" class="d-inline-block align-text-top">
-                <strong> Arborista Araucanía </strong>
+                <strong> Arborista Araucanía</strong>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -35,7 +36,10 @@
                         <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#experiencia">Experiencia</a>
+                        <a class="nav-link active" href="#gallery">Poda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#market">Market</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#contacto">Contacto</a>
@@ -44,18 +48,44 @@
             </div>
         </div>
     </nav>
-
+    </div>
     <header>
-        <div class="carousel-inner" id="home">
-            <img src="assets/img/bosque2.jpg" class="d-block w-100" alt="img1" height="550px;">
+        <div class="carousel-inner" id="home" style="font-family: Cinzel, serif;">
+            <img src="assets/img/bosque2.jpg" class="d-block w-100" alt="img1" height="800px;">
+            <div class="carousel-caption d-none d-md-block">
+                <h1><strong>Arborista Araucanía</strong></h1>
+                <p>Some representative placeholder content for the third slide.</p>
+            </div>
         </div>
     </header>
+
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top p-3 bg-info bg-danger border border-info border-bottom border-danger border-start-0 rounded-end">
+            <div class="col-md-4 d-flex align-items-center">
+                <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><i class="fa-solid fa-tree"></i></svg>
+                </a>
+            <span class="mb-3 mb-md-0 text-body-secondary"><strong> EMERGENCIAS 24/7</strong></span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <a class="btn btn-outline-warning btn-lg col-2" href="https://wa.me/56973975740" role="button">
+                    <i class="fa-brands fa-whatsapp"></i></a>
+                <a class="btn btn-outline-warning btn-lg col-2" href="https://www.instagram.com/arborista_araucania" role="button">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a class="btn btn-outline-warning btn-lg col-2" href="mailto:moraga452@gmail.com" role="button">
+                    <i class="fa-solid fa-envelope"></i></a>
+            </ul>
+        </div>
+    </div>
 
     <div class="px-4 py-5 my-5 text-center" id="itemLogo">
         <img class="d-block mx-auto mb-4" src="assets/img/logo.jpg" alt="logo" width="350" height="250">
             <h1 class="display-5 fw-bold text-body-emphasis">Cotización sin compromiso</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <p class="lead mb-4">En Arborista Araucanía somos especialistas en arborismo y poda controlada en altura, 
+                comprometidos con la salud y el bienestar de tus árboles y espacios verdes. Nuestro equipo de profesionales 
+                altamente capacitados utiliza técnicas seguras y eficientes para realizar podas precisas, garantizando no solo la 
+                estética de tus árboles, sino también su salud y longevidad.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a class="btn btn-outline-success btn-lg px-4 gap-3" href="#contacto">Contacto</a>
             </div>
@@ -88,7 +118,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="carusel1" style="width: 700px;">
+    <div class="container" id="carusel1" style="width: 700px;">
         <div id="carousel1" class="carousel slide" data-bs-ride="carousel1">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="5000">
@@ -112,22 +142,178 @@
         </div>
     </div>
 
-    <section class="container-fluid" style="padding-top: 5%;">
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="assets/img/fotoS.png" class="img-fluid rounded-start" alt="fotoS">
+    <div id="gallery" class="jumbotron text-center" style="padding-top: 5%;">
+        <h1 class="display-3">PODA EN ALTURA</h1>
+        <p class="lead">La importancia de la poda controlada en altura.</p>
+        <a href="#contacto" class="btn btn-primary">Click aquí!</a>
+
+        <div class="container" style="padding-top: 2%;">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/caido1.jpg" alt="caido1" class="img-thumbnail card-img-top" style="height: 280px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Poda en altura controlada</h4>
+                            <p class="card-text">La poda de árboles en altura es crucial por varias razones. En primer lugar, 
+                                ayuda a mantener la salud del árbol al eliminar ramas muertas o enfermas, lo que previene plagas y enfermedades. 
+                                También mejora la estructura y la seguridad, ya que reduce el riesgo de caídas de ramas.</p>
+                            <a href="#contacto" class="btn btn-outline-danger btn-sm">Cotiza aquí!</a>
+                            <a href="#contacto" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/plagas.jpg" alt="plaga1" class="img-thumbnail card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Plagas</h4>
+                            <p class="card-text">Los árboles no podados son más susceptibles a diversas plagas y enfermedades debido a su denso follaje, 
+                                falta de luz y circulación de aire. Las plagas y infecciones fungicas son muy comunes ya que prosperen en ambientes húmedos y con poca ventilación.</p>
+                            <a href="#contacto" class="btn btn-outline-warning btn-sm">Cotiza aquí!</a>
+                            <a href="#contacto" class="btn btn-outline-warning btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/img/paisajis.jpg" alt="paisajis1" class="img-thumbnail card-img-top" style="height: 280px;">
+                        <div class="card-body">
+                            <h4 class="card-title">Paisajismo</h4>
+                            <p class="card-text">El paisajismo es el arte y la ciencia de diseñar y modificar espacios al aire libre para crear entornos estéticamente 
+                                agradables y funcionales. La poda controlada en altura juega un papel esencial en este proceso. Al realizar podas estratégicas, se puede dar forma a los árboles y arbustos, 
+                                asegurando que crezcan de manera equilibrada y armoniosa con el diseño del paisaje.</p>
+                            <a href="#contacto" class="btn btn-outline-success btn-sm">Cotiza aquí!</a>
+                            <a href="#contacto" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top p-3 bg-info bg-danger border border-info border-bottom border-danger border-start-0 rounded-end">
+            <div class="col-md-4 d-flex align-items-center">
+                <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="40" height="44"><i class="fa-solid fa-tree"></i></svg>
+                </a>
+            <span class="mb-3 mb-md-0 text-body-secondary"><strong> EMERGENCIAS 24/7</strong></span>
+        </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <a class="btn btn-outline-warning btn-lg col-2" href="https://wa.me/56973975740" role="button">
+                    <i class="fa-brands fa-whatsapp"></i></a>
+                <a class="btn btn-outline-warning btn-lg col-2" href="https://www.instagram.com/arborista_araucania" role="button">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a class="btn btn-outline-warning btn-lg col-2" href="mailto:moraga452@gmail.com" role="button">
+                    <i class="fa-solid fa-envelope"></i></a>
+            </ul>
+        </div>
+    </div>
+
+    <section class="container1" id="market">
+        <h2 class="container-title" style="padding-right: 75%;">Nuestro Market</h2>
+        <div class="carousel" style="padding-top: 1%;">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="assets/img/rodaja1.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Tim Marshall</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="assets/img/rodaja1.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Christian Joudrey</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="assets/img/rodaja1.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Steve Carter</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="assets/img/rodaja1.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="assets/img/rodaja1.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Rosan Harmens</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="assets/img/rodaja1.jpg" alt="">
+                        </div>
+                        <figcaption>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <span class="credit">Photo: Annie Spratt</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-1"><img src="assets/img/rodaja1.jpg" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-2"><img src="assets/img/rodaja1.jpg" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-3"><img src="assets/img/rodaja1.jpg" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-4"><img src="assets/img/rodaja1.jpg" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-5"><img src="assets/img/rodaja1.jpg" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-6"><img src="assets/img/rodaja1.jpg" alt=""></label>
+                </li>
+            </ul>
+        </div>
     </section>
+
+
+    <div class="container-lg" style="padding-top: 2%;">
+        <web-component-embed id="gbzKbk" app_slug="map"></web-component-embed><script src="https://app.powr.io/assets/webcomponent.js"></script>
+    </div>
 
     <div class="container-fluid" id="contacto" style="background-color: rgb(83, 126, 83);">
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
